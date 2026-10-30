@@ -154,6 +154,7 @@ export function createSculpture(host, initialMotion) {
         const height = host.clientHeight;
         if (!width || !height) return;
         camera.aspect = width / height;
+        if (helix) camera.position.z = Math.max(11.4, 10.8 / camera.aspect);
         camera.updateProjectionMatrix();
         sectionTop = host.closest('section').offsetTop;
         renderer.setSize(width, height, false);
