@@ -10,6 +10,12 @@ function selectAudience(audience) {
     panels.forEach((panel) => {
         panel.hidden = panel.id !== `panel-${audience}`;
     });
+    if (!document.documentElement.classList.contains('motion-paused')) {
+        document.getElementById(`panel-${audience}`).animate(
+            [{ opacity: 0, transform: 'translateY(14px)' }, { opacity: 1, transform: 'translateY(0)' }],
+            { duration: 420, easing: 'cubic-bezier(.22,1,.36,1)' }
+        );
+    }
 }
 
 document.querySelectorAll('[data-audience]').forEach((control) => {
