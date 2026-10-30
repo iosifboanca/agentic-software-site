@@ -54,6 +54,12 @@ h1 em{color:var(--lime);letter-spacing:-.067em;font-size:.98em}
 .audience-links span{display:inline-block;margin-left:10px;font-size:18px;letter-spacing:0;transition:transform 300ms var(--ease)}
 .audience-links a:hover{color:var(--lime)}
 .audience-links a:hover span{transform:translate(4px,-4px)}
+.client-experience{padding-block:44px 42px;border-top:1px solid var(--rule)}
+.client-experience h2{font-size:12px;line-height:1.5;letter-spacing:.16em;text-transform:uppercase;font-weight:400;color:var(--muted)}
+.client-names{list-style:none;margin:36px 0 28px;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));align-items:center;gap:28px}
+.client-names li{font-size:clamp(20px,2.25vw,36px);line-height:1.1;font-weight:500;letter-spacing:-.055em;white-space:nowrap}
+.client-descriptor{display:block;margin-top:5px;font-size:10px;font-weight:400;letter-spacing:.18em;text-transform:uppercase;color:#bfc5ba}
+.client-context{max-width:800px;font-size:12px;line-height:1.65;color:var(--muted)}
 .expertise{background:var(--paper);color:var(--ink);padding-block:100px 80px;color-scheme:light}
 .section-label{display:flex;align-items:center;gap:22px;font-size:16px;font-weight:400;letter-spacing:-.02em}
 .section-label::before{content:"";width:44px;height:2px;background:currentColor}
@@ -122,6 +128,8 @@ h2 em{letter-spacing:-.06em}
 h1{font-size:9vw}
 .hero-copy>p{max-width:480px;font-size:24px}
 .hero-art{right:-4%;width:54%}
+.client-names{gap:18px}
+.client-names li{font-size:clamp(16px,2.25vw,25px)}
 .section-intro h2{font-size:8vw}
 .service-row{grid-template-columns:10% 44% 1fr}
 .service-row h3{padding-right:24px;font-size:33px}
@@ -152,6 +160,12 @@ h1 em{letter-spacing:-.065em}
 .audience-links a{font-size:9px;letter-spacing:.12em;line-height:1.5}
 .audience-links a:nth-child(2),.audience-links a:last-child{text-align:left}
 .audience-links span{font-size:14px;margin-left:4px}
+.client-experience{padding-block:32px}
+.client-experience h2{font-size:10px;letter-spacing:.13em}
+.client-names{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 20px;margin-block:28px}
+.client-names li{font-size:clamp(22px,6vw,32px)}
+.client-descriptor{font-size:8px;margin-top:4px}
+.client-context{font-size:11px;line-height:1.7}
 .expertise{padding-block:62px 35px}
 .section-label{font-size:14px;gap:15px}
 .section-label::before{width:30px}
