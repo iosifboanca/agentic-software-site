@@ -8,7 +8,7 @@
     <title>Agentic Software — AI strategy. Real advantage.</title>
     <link rel="canonical" href="https://agentic-software.co.uk/">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css?v=5">
+    <link rel="stylesheet" href="styles.css?v=6">
     <script type="module" src="assets/app.js?v=3"></script>
 </head>
 <body>
@@ -47,6 +47,14 @@
         </section>
 
         <section class="client-experience" aria-labelledby="client-heading">
+            <svg class="client-logo-filters" aria-hidden="true" width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="client-remove-white" color-interpolation-filters="sRGB">
+                        <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  -0.4252 -1.4304 -0.1444 2 0"/>
+                        <feComponentTransfer><feFuncA type="linear" slope="1.1" intercept="-0.1"/></feComponentTransfer>
+                    </filter>
+                </defs>
+            </svg>
             <div class="page-width">
                 <h2 id="client-heading">Selected client experience</h2>
                 <ul class="client-logos" aria-label="Organisations our founder has worked with">

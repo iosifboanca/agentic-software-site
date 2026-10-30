@@ -58,11 +58,15 @@ h1 em{color:var(--lime);letter-spacing:-.067em;font-size:.98em}
 .client-experience h2{font-size:12px;line-height:1.5;letter-spacing:.16em;text-transform:uppercase;font-weight:400;color:var(--muted)}
 .client-logos{list-style:none;margin:30px 0 28px;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}
 .client-logo{min-width:0;display:grid;grid-template-rows:84px auto;align-items:center;justify-items:center;gap:16px;text-align:center}
-.client-logo img{display:block;max-width:100%;object-fit:contain;opacity:.8}
-.client-logo .client-logo-raster{opacity:1}
-.client-name{align-self:start;display:flex;min-height:30px;align-items:center;justify-content:center;max-width:100%;font-family:"Helvetica Neue",Arial,sans-serif;font-size:25px;font-weight:500;line-height:1.2;letter-spacing:-.045em;color:var(--paper)}
-.client-name img{opacity:1;max-width:100%;height:auto}
-.client-name-westbridge img{filter:brightness(0) invert(1)}
+.client-logo-filters{position:absolute;overflow:hidden;pointer-events:none}
+.client-logo img{display:block;max-width:100%;object-fit:contain;filter:grayscale(1);opacity:.72;transition:filter 300ms,opacity 300ms}
+.client-logo:hover img{filter:none;opacity:1}
+.client-logo .client-logo-raster{filter:url(#client-remove-white) grayscale(1) brightness(2.5)}
+.client-logo:hover .client-logo-raster{filter:url(#client-remove-white)}
+.client-name{align-self:start;display:flex;min-height:30px;align-items:center;justify-content:center;max-width:100%;font-family:"Helvetica Neue",Arial,sans-serif;font-size:25px;font-weight:500;line-height:1.2;letter-spacing:-.045em;color:var(--muted);transition:color 300ms}
+.client-logo:hover .client-name{color:var(--paper)}
+.client-name img{max-width:100%;height:auto}
+.client-name-westbridge img,.client-logo:hover .client-name-westbridge img{filter:brightness(0) invert(1)}
 .client-context{max-width:800px;font-size:12px;line-height:1.65;color:var(--muted)}
 .expertise{background:var(--paper);color:var(--ink);padding-block:100px 80px;color-scheme:light}
 .section-label{display:flex;align-items:center;gap:22px;font-size:16px;font-weight:400;letter-spacing:-.02em}
