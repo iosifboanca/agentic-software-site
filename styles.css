@@ -56,15 +56,13 @@ h1 em{color:var(--lime);letter-spacing:-.067em;font-size:.98em}
 .audience-links a:hover span{transform:translate(4px,-4px)}
 .client-experience{padding-block:44px 42px;border-top:1px solid var(--rule)}
 .client-experience h2{font-size:12px;line-height:1.5;letter-spacing:.16em;text-transform:uppercase;font-weight:400;color:var(--muted)}
-.client-logos{list-style:none;margin:24px 0 20px;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:28px}
-.client-logos li{min-width:0}
-.client-logo{position:relative;width:100%;height:138px;display:flex;align-items:center;justify-content:center;padding:0 0 26px;border:0;background:none;color:var(--lime);cursor:pointer}
-.client-logo img{display:block;max-width:100%;object-fit:contain;opacity:.72;transition:opacity 250ms,transform 350ms var(--ease)}
-.client-logo-phoenix{filter:invert(1)}
-.client-logo-raster{filter:grayscale(1) invert(1) brightness(2);mix-blend-mode:screen}
-.client-name{position:absolute;bottom:0;left:50%;max-width:100%;transform:translate(-50%,6px);opacity:0;font-size:12px;line-height:1.5;letter-spacing:.015em;white-space:nowrap;pointer-events:none;transition:opacity 250ms,transform 350ms var(--ease)}
-.client-logo:hover img,.client-logo:focus img{opacity:1;transform:translateY(-4px)}
-.client-logo:hover .client-name,.client-logo:focus .client-name,.client-logo:active .client-name{opacity:1;transform:translate(-50%,0)}
+.client-logos{list-style:none;margin:30px 0 28px;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}
+.client-logo{min-width:0;display:grid;grid-template-rows:84px auto;align-items:center;justify-items:center;gap:16px;text-align:center}
+.client-logo img{display:block;max-width:100%;object-fit:contain;opacity:.8}
+.client-logo .client-logo-raster{opacity:1}
+.client-name{align-self:start;display:flex;min-height:30px;align-items:center;justify-content:center;max-width:100%;font-family:"Helvetica Neue",Arial,sans-serif;font-size:25px;font-weight:500;line-height:1.2;letter-spacing:-.045em;color:var(--paper)}
+.client-name img{opacity:1;max-width:100%;height:auto}
+.client-name-westbridge img{filter:brightness(0) invert(1)}
 .client-context{max-width:800px;font-size:12px;line-height:1.65;color:var(--muted)}
 .expertise{background:var(--paper);color:var(--ink);padding-block:100px 80px;color-scheme:light}
 .section-label{display:flex;align-items:center;gap:22px;font-size:16px;font-weight:400;letter-spacing:-.02em}
@@ -135,7 +133,6 @@ h1{font-size:9vw}
 .hero-copy>p{max-width:480px;font-size:24px}
 .hero-art{right:-4%;width:54%}
 .client-logos{gap:18px}
-.client-name{font-size:11px}
 .section-intro h2{font-size:8vw}
 .service-row{grid-template-columns:10% 44% 1fr}
 .service-row h3{padding-right:24px;font-size:33px}
@@ -168,11 +165,12 @@ h1 em{letter-spacing:-.065em}
 .audience-links span{font-size:14px;margin-left:4px}
 .client-experience{padding-block:32px}
 .client-experience h2{font-size:10px;letter-spacing:.13em}
-.client-logos{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 12px;margin-block:20px}
-.client-logo{height:108px;padding-bottom:22px}
-.client-logo img{width:auto;max-width:64px;max-height:64px}
+.client-logos{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 18px;margin-block:26px}
+.client-logo{grid-template-rows:64px auto;gap:14px}
+.client-logo>img{width:auto;max-width:64px;max-height:64px}
 .client-logo .client-logo-wide{max-width:min(90px,100%)}
-.client-name{font-size:10px;white-space:normal;text-align:center;line-height:1.25}
+.client-name{font-size:23px;min-height:28px}
+.client-name-westbridge img{width:min(140px,100%)}
 .client-context{font-size:11px;line-height:1.7}
 .expertise{padding-block:62px 35px}
 .section-label{font-size:14px;gap:15px}
